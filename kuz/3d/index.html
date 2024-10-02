@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Базовый шаблон</title>
+
+    <!-- Подключение three.js -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/threejs/r84/three.min.js"></script>
+
+    <!-- Подключение jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- В данный элемент будет выводиться изображение -->
+    <div id="WebGL-output"></div>
+
+    <!-- Скрипт JS -->
+    <script type="text/javascript">
+        // Код будет запускаться при загрузке страницы
+        $(function() {
+            // здесь будет находиться наш javascript код
+            var scene = new THREE.Scene1();
+            console.log("Страница загружена и готова к использованию.");
+        });
+    </script>
+</body>
+</html>

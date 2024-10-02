@@ -1,0 +1,55 @@
+// A.h
+#pragma once
+
+class MyClass 
+{
+MyClass();
+void func1();
+void func2();
+};
+
+* * *
+
+// A.cpp
+#include "stdafx.h"
+#include "A.h"
+
+MyClass::MyClass()
+{ /* какой-то код */ }
+
+MyClass::func1()
+{ func2(); }   // func1 прекрасно видит func2
+
+* * *
+
+// B.h
+#pragma once
+
+class MyClass 
+{
+void func2();
+void func3();
+}
+
+* * *
+
+// B.cpp
+#include "stdafx.h"
+#include "B.h"
+
+MyClass::func2()
+{ /* какой-то код */ }
+
+MyClass::func3()
+{ func1(); }   // нет, он не будет компилироваться, func1 ему не известна
+
+
+//main.cpp
+#include "A.h" .....
+....
+
+int main(){
+ A obja;
+ obja.func1();
+.....
+}

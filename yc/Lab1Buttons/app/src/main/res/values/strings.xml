@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab 1 - Buttons</string>
+   <string name="tv">Косовский</string>
+    <string name="stars">***</string>
+    <string name="p">+</string>
+    <string name="preferences">MEGANASTROYKA</string>
+    <string name="k1">1</string>
+    <string name="k2">2</string>
+    <string name="k3">3</string>
+    <string name="v1">1</string>
+    <string name="v2">2</string>
+    <string name="v3">3</string>
+</resources>
